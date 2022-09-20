@@ -1,3 +1,4 @@
+
 # Matrix
 # 1) A matrix is a two dimensional data set with columns and rows. 
 # 2) A column is a vertical representation of data, while a row is a 
@@ -13,8 +14,9 @@ m1
 
 # m2 <- matrix(seq(1,8), nrow = 2)
 m2 <- matrix(seq(1,8), nrow = 4)
-print(class(m2))
+# print(class(m2))
 m2
+
 
 # m3 <- matrix(seq(1,8), ncol = 4)
 m3 <- matrix(seq(1,8), ncol = 6)
@@ -48,7 +50,7 @@ n1[-1,-2]  # exclude row index -1 and exclude col index -2
 
 n1[c(-1,-4),-2]
 n1[-3,c(-1,-2)]  
-n1
+
 
 # Creating matrix using different vectors
 
@@ -102,6 +104,7 @@ data2[,"Age"]
 age_in_int <- as.integer(data2[,"Age"])
 class(age_in_int)
 
+
 x <- matrix(seq(1,6),c(3,2))
 y <- matrix(seq(5,12),c(2,4))
 z <- matrix(c(1,2,5,6,8,4,12,16,15),c(3,3))
@@ -116,7 +119,7 @@ z
 z1 <- solve(z)
 z1
 
-z%*%z1 # identity matrix
+z%*%z1 
 
 # transpose of matrix
 z
@@ -127,6 +130,7 @@ t(z)
 data2
 print(dim(data2))
 print(dimnames(data2))
+
 
 # create diagonal matrix with only diagonal elements, other elements are 0
 c1 <- diag(c(1,3,8,10))
@@ -151,4 +155,12 @@ class(z)
 z2 <- as.vector(z)
 z2
 print(class(z2))
+
+
+
+
+
+
+
+
 
